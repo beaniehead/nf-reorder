@@ -1,0 +1,15 @@
+ {
+    "name": "Netflix Reorder",
+    "version": "1.0",
+    "description": "Build an Extension!",
+      "permissions": ["storage"],
+    "content_scripts":[
+      {
+        "matches":["https://www.netflix.com/*"],
+        "js":["content.js"],
+        "run_at":"document_end"
+
+      }
+    ],
+    "manifest_version": 2
+  }
